@@ -43,7 +43,26 @@
     font-size: 1rem;
     font-weight:500;
 }
-
+.font-white-6 {
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight:200;
+}
+.dark-blue-1
+{
+    color: #1A0B2E;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.dark-blue-2
+{
+    color: #1A0B2E;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+.green-background{
+    background-color: #00FF88;
+}
 .gradient {
     background: linear-gradient(to right, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
 }
@@ -63,6 +82,10 @@ header {
     background-color: rgba(26, 11, 46, 1);
     border: 2px solid;
     max-width: 100%;
+
+    background: url("./assets/hero-bg.png");
+    background-repeat: no-repeat;
+    /* background-position: 38px 23px,bottom right; */
 }
 
 /* nav style */
@@ -80,4 +103,42 @@ nav{
 
 .menu a{
  text-decoration: none;
+}
+
+/* banar style  */
+
+.banar{
+    border-top: 1px solid rgba(68, 14, 68, 0.839);
+}
+
+.banar-content{
+    width: 35.5rem;
+    margin: 3.5rem auto;
+    text-align: center;
+}
+.parent{
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+.image-circle{
+    width: 100%;
+}
+.image-mic{
+    position: absolute;
+    top: 20%;
+    left: 39%;
+}
+.btn-new{
+    position: absolute;
+    right: 22%;
+}
+.banar-info{
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.banar-sub-btn{
+    background-color: transparent;
+    border: 2px solid green;
+    color: green;
+    gap: 3px;
 }
