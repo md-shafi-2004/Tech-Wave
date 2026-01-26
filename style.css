@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,6 +7,77 @@
 /* shared style */
 
 .inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* biggest */
+.font-white-1 {
+    color: #FFFFFF;
+    font-size: 3.75rem;
+    font-weight: bold;
+}
+
+/* bigger */
+.font-white-2 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* big */
+.font-white-3 {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: bold;
+}
+/* small bold */
+.font-white-4 {
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+}
+ /* medium */
+.font-white-5 {
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight:500;
+}
+
+.gradient {
+    background: linear-gradient(to right, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+}
+
+.gradient-text {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn {
+    border-radius: 10000px;
+    padding: 12.5px 16px;
+}
+
+/* header style */
+header {
+    background-color: rgba(26, 11, 46, 1);
+    border: 2px solid;
+    max-width: 100%;
+}
+
+/* nav style */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.menu a{
+ text-decoration: none;
 }
