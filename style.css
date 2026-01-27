@@ -33,7 +33,8 @@
 }
 
 /* small bold */
-.font-white-4 {
+.font-white-4,
+.card-title {
     color: #FFFFFF;
     font-size: 1rem;
     font-weight: 600;
@@ -47,7 +48,8 @@
 }
 
 .font-white-6,
-.stat-card p {
+.stat-card p,
+.card-info {
     color: #FFFFFF;
     font-size: 1rem;
     font-weight: 200;
@@ -83,10 +85,16 @@
     padding: 12.5px 16px;
 }
 
+.stat-container,
+.why-container {
+    width: 75rem;
+    margin: 0 auto;
+}
+
 /* header style */
 header {
     background-color: rgba(26, 11, 46, 1);
-    max-width: 100%;
+    width: 100%;
     background: url("./assets/hero-bg.png");
     background-repeat: no-repeat;
     /* background-position: 38px 23px,bottom right; */
@@ -158,12 +166,9 @@ nav {
 .stat {
     background-color: #1A0B2E;
     padding-top: 9.43rem;
+    padding-bottom: 7.5rem;
 }
 
-.stat-container {
-    width: 75rem;
-    margin: 0 auto;
-}
 
 .stat-content {
     text-align: center;
@@ -184,4 +189,55 @@ nav {
     color: #00FF88;
 }
 
-.stat-card p {}
+/* why style */
+.why {
+    background-color: rgba(35, 14, 61, 1);
+    padding-top: 7.5rem;
+}
+
+.why-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.why-card {
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+}
+
+.big-layout {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.wide-layout {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.small-layout {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.card-image {
+    margin-bottom: 1rem;
+}
+
+.card-info {
+    margin-bottom: 1rem;
+}
+
+.why-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 23.75rem);
+    gap: 2.3rem;
+}
+
+.why-card {
+    display: flex;
+    align-items: center;
+    padding: 0 2.5rem;
+    
+}
