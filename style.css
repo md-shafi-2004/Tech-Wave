@@ -19,25 +19,29 @@
 }
 
 /* bigger */
-.font-white-2 {
+.font-white-2,
+.episode-title,
+.host-title {
     color: #FFFFFF;
     font-size: 3rem;
     font-weight: bold;
 }
 
 /* big */
-.font-white-3 {
+.font-white-3,
+.host-name,
+.card-title {
     color: #FFFFFF;
     font-size: 2rem;
     font-weight: bold;
 }
 
 /* small bold */
-.font-white-4,
-.card-title {
-    color: #FFFFFF;
-    font-size: 1rem;
-    font-weight: 600;
+.font-white-4
+{
+color: #FFFFFF;
+font-size: 1rem;
+font-weight: 600;
 }
 
 /* medium */
@@ -95,8 +99,8 @@
 /* header style */
 header {
     background-color: rgba(26, 11, 46, 1);
-    
-    
+
+
     background-repeat: no-repeat;
     /* background-position: 38px 23px,bottom right; */
 }
@@ -125,7 +129,7 @@ nav {
     padding-top: 3.5rem;
     background: url("./assets/hero-bg.png");
     width: 100vw;
-    
+
 }
 
 .banar-content {
@@ -243,36 +247,73 @@ nav {
     display: flex;
     align-items: center;
     padding: 0 2.5rem;
-    
+
 }
 
 /* podcast style */
-.podcast{
+.podcast {
     background-color: #1A0B2E;
     padding: 7.5rem 12.5rem;
 }
-.podcast-container h3{
+
+.podcast-container h3 {
     text-align: center;
 }
-.episode{
-    
-}
-.episode-cards{
-    display: flex; 
+
+.episode {}
+
+.episode-cards {
+    display: flex;
     justify-content: space-between;
+    margin-top: 2rem;
 }
-.episode-card{
+
+.episode-card {
     max-width: 23.5rem;
     background-color: #250D44;
     border-radius: 1rem;
 }
-.card-video iframe{
+
+.card-video iframe {
     width: 100%;
     border-radius: 1rem;
 }
-.card-duration{
+
+.card-content {
+    padding: 1.5rem;
+}
+.card-info{
+    margin: 1rem 0;
+}
+
+.card-duration {
     color: #00FF88;
 }
-.host-container{
+
+.host {
+    margin-top: 7rem;
+}
+
+.host-container {
     display: flex;
+    gap: 1.5rem;
+    padding: 2.5rem;
+    margin-top: 2rem;
+    background-color: #250D44;
+}
+.host-info{
+    margin: 1rem 0;
+}
+.host-social{
+    display: flex;
+    gap: 0.5rem;
+}
+.social-image{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0.5px solid pink;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
