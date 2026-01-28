@@ -14,7 +14,7 @@
 /* biggest */
 .font-white-1 {
     color: #FFFFFF;
-    font-size: 3.75rem;
+    font-size: 3.75em;
     font-weight: bold;
 }
 
@@ -23,7 +23,7 @@
 .episode-title,
 .host-title {
     color: #FFFFFF;
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: bold;
 }
 
@@ -32,22 +32,21 @@
 .host-name,
 .card-title {
     color: #FFFFFF;
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: bold;
 }
 
 /* small bold */
-.font-white-4
-{
-color: #FFFFFF;
-font-size: 1rem;
-font-weight: 600;
+.font-white-4 {
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: 600;
 }
 
 /* medium */
 .font-white-5 {
     color: #FFFFFF;
-    font-size: 1rem;
+    font-size: 1 em;
     font-weight: 500;
 }
 
@@ -116,6 +115,10 @@ nav {
     display: flex;
     gap: 2rem;
     list-style: none;
+}
+
+.menu-image {
+    display: none;
 }
 
 .menu a {
@@ -282,7 +285,8 @@ nav {
 .card-content {
     padding: 1.5rem;
 }
-.card-info{
+
+.card-info {
     margin: 1rem 0;
 }
 
@@ -301,14 +305,17 @@ nav {
     margin-top: 2rem;
     background-color: #250D44;
 }
-.host-info{
+
+.host-info {
     margin: 1rem 0;
 }
-.host-social{
+
+.host-social {
     display: flex;
     gap: 0.5rem;
 }
-.social-image{
+
+.social-image {
     width: 2.5rem;
     height: 2.5rem;
     border: 0.5px solid pink;
@@ -316,4 +323,30 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hide {
+    display: none !important;
+}
+
+@media screen and (max-width: 578px) {
+  
+    /* responsing navbar */
+    nav {
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu+div {
+        display: none;
+    }
+
+    .menu-image {
+        display: block;
+    }
+
 }
