@@ -86,7 +86,8 @@
 }
 
 .stat-container,
-.why-container {
+.why-container,
+.podcast-container {
     width: 75rem;
     margin: 0 auto;
 }
@@ -94,8 +95,8 @@
 /* header style */
 header {
     background-color: rgba(26, 11, 46, 1);
-    width: 100%;
-    background: url("./assets/hero-bg.png");
+    
+    
     background-repeat: no-repeat;
     /* background-position: 38px 23px,bottom right; */
 }
@@ -122,6 +123,9 @@ nav {
 .banar {
     border-top: 1px solid rgba(68, 14, 68, 0.839);
     padding-top: 3.5rem;
+    background: url("./assets/hero-bg.png");
+    width: 100vw;
+    
 }
 
 .banar-content {
@@ -231,7 +235,7 @@ nav {
 .why-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 23.75rem);
+    grid-template-rows: repeat(3, 1fr);
     gap: 2.3rem;
 }
 
@@ -240,4 +244,35 @@ nav {
     align-items: center;
     padding: 0 2.5rem;
     
+}
+
+/* podcast style */
+.podcast{
+    background-color: #1A0B2E;
+    padding: 7.5rem 12.5rem;
+}
+.podcast-container h3{
+    text-align: center;
+}
+.episode{
+    
+}
+.episode-cards{
+    display: flex; 
+    justify-content: space-between;
+}
+.episode-card{
+    max-width: 23.5rem;
+    background-color: #250D44;
+    border-radius: 1rem;
+}
+.card-video iframe{
+    width: 100%;
+    border-radius: 1rem;
+}
+.card-duration{
+    color: #00FF88;
+}
+.host-container{
+    display: flex;
 }
